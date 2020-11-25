@@ -51,7 +51,7 @@ export const App = () => {
         inputText={inputText}
         onChange={onChangeTodoText}
         onClick={onClickAdd}
-        disabeld={incompleteTodos.length >= 5 && true}
+        disabeld={incompleteTodos.length >= 5}
       />
       {incompleteTodos.length >= 5 && <p>登録できるタスクは５個までです</p>}
       <IncompleteTodos
